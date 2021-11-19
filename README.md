@@ -20,7 +20,7 @@ limitations under the License.
 
 # itermeanabs
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Compute the [arithmetic mean][arithmetic-mean] of absolute values for all [iterated][mdn-iterator-protocol] values.
 
@@ -135,9 +135,9 @@ console.log( 'meanabs: %d.', m );
 
 ## See Also
 
--   [`@stdlib/stats/iter/mean`][@stdlib/stats/iter/mean]: compute the arithmetic mean over all iterated values.
--   [`@stdlib/stats/iter/mmeanabs`][@stdlib/stats/iter/mmeanabs]: create an iterator which iteratively computes a moving arithmetic mean of absolute values.
--   [`@stdlib/stats/iter/sumabs`][@stdlib/stats/iter/sumabs]: compute the sum of absolute values for all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/mean`][@stdlib/stats/iter/mean]</span><span class="delimiter">: </span><span class="description">compute the arithmetic mean over all iterated values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/mmeanabs`][@stdlib/stats/iter/mmeanabs]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a moving arithmetic mean of absolute values.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/sumabs`][@stdlib/stats/iter/sumabs]</span><span class="delimiter">: </span><span class="description">compute the sum of absolute values for all iterated values.</span>
 
 </section>
 
@@ -188,8 +188,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-iter-meanabs/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-iter-meanabs?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stats-iter-meanabs.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stats-iter-meanabs/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
