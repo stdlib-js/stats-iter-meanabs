@@ -30,10 +30,14 @@ The [arithmetic mean][arithmetic-mean] of absolute values is defined as
 
 <!-- <equation class="equation" label="eq:arithmetic_mean_absolute_values" align="center" raw="\mu = \frac{1}{n} \sum_{i=0}^{n-1} |x_i|" alt="Equation for the arithmetic mean of absolute values."> -->
 
-<div class="equation" align="center" data-raw-text="\mu = \frac{1}{n} \sum_{i=0}^{n-1} |x_i|" data-equation="eq:arithmetic_mean_absolute_values">
+```math
+\mu = \frac{1}{n} \sum_{i=0}^{n-1} |x_i|
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\mu = \frac{1}{n} \sum_{i=0}^{n-1} |x_i|" data-equation="eq:arithmetic_mean_absolute_values">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@896f937c33114bc5971c1cf87c60fbdbbb66f6ba/lib/node_modules/@stdlib/stats/iter/meanabs/docs/img/equation_arithmetic_mean_absolute_values.svg" alt="Equation for the arithmetic mean of absolute values.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -204,7 +208,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
