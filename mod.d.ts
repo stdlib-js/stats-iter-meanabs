@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,16 +16,20 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Compute the arithmetic mean of absolute values for all iterated values.
+* Computes the arithmetic mean of absolute values for all iterated values.
 *
-* @module @stdlib/stats-iter-meanabs
+* @param iterator - input iterator
+* @returns arithmetic mean of absolute values
 *
 * @example
-* var runif = require( '@stdlib/random-iter-uniform' );
-* var itermeanabs = require( '@stdlib/stats-iter-meanabs' );
+* var runif = require( `@stdlib/random/iter/uniform` );
 *
 * var rand = runif( -10.0, 10.0, {
 *     'iter': 100
@@ -34,12 +38,9 @@
 * var m = itermeanabs( rand );
 * // returns <number>
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function itermeanabs( iterator: Iterator ): number | null;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = itermeanabs;
