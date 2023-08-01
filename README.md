@@ -47,38 +47,30 @@ The [arithmetic mean][arithmetic-mean] of absolute values is defined as
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-meanabs
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-itermeanabs = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var itermeanabs = require( 'path/to/vendor/umd/stats-iter-meanabs/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.itermeanabs;
-})();
-</script>
+var itermeanabs = require( '@stdlib/stats-iter-meanabs' );
 ```
 
 #### itermeanabs( iterator )
@@ -118,14 +110,9 @@ var m = itermeanabs( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var runif = require( '@stdlib/random-iter-uniform' );
+var itermeanabs = require( '@stdlib/stats-iter-meanabs' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -138,11 +125,6 @@ var m = itermeanabs( rand );
 // returns <number>
 
 console.log( 'meanabs: %d.', m );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -248,11 +230,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean/tree/umd
+[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean
 
-[@stdlib/stats/iter/mmeanabs]: https://github.com/stdlib-js/stats-iter-mmeanabs/tree/umd
+[@stdlib/stats/iter/mmeanabs]: https://github.com/stdlib-js/stats-iter-mmeanabs
 
-[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs/tree/umd
+[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs
 
 <!-- </related-links> -->
 
