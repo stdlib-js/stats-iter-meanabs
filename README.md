@@ -65,7 +65,7 @@ The [arithmetic mean][arithmetic-mean] of absolute values is defined as
 ## Usage
 
 ```javascript
-import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@deno/mod.js';
+import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@v0.2.1-deno/mod.js';
 ```
 
 #### itermeanabs( iterator )
@@ -107,7 +107,7 @@ var m = itermeanabs( arr );
 
 ```javascript
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@deno/mod.js';
+import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@v0.2.1-deno/mod.js';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
