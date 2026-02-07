@@ -65,6 +65,11 @@ The [arithmetic mean][arithmetic-mean] of absolute values is defined as
 ## Usage
 
 ```javascript
+import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-meanabs/tags). For example,
+
+```javascript
 import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@v0.2.3-esm/index.mjs';
 ```
 
@@ -112,7 +117,7 @@ var m = itermeanabs( arr );
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@v0.2.3-esm/index.mjs';
+import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
