@@ -58,32 +58,14 @@ The [arithmetic mean][arithmetic-mean] of absolute values is defined as
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-iter-meanabs
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var itermeanabs = require( '@stdlib/stats-iter-meanabs' );
+import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@esm/index.mjs';
 ```
 
 #### itermeanabs( iterator )
@@ -91,7 +73,7 @@ var itermeanabs = require( '@stdlib/stats-iter-meanabs' );
 Computes the [arithmetic mean][arithmetic-mean] of absolute values for all [iterated][mdn-iterator-protocol] values.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var arr = array2iterator( [ 1.0, -2.0, -3.0, 4.0 ] );
 
@@ -123,9 +105,14 @@ var m = itermeanabs( arr );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var runif = require( '@stdlib/random-iter-uniform' );
-var itermeanabs = require( '@stdlib/stats-iter-meanabs' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
+import itermeanabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-meanabs@esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -138,6 +125,10 @@ var m = itermeanabs( rand );
 // returns <number>
 
 console.log( 'meanabs: %d.', m );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -177,7 +168,7 @@ console.log( 'meanabs: %d.', m );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -246,11 +237,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean
+[@stdlib/stats/iter/mean]: https://github.com/stdlib-js/stats-iter-mean/tree/esm
 
-[@stdlib/stats/iter/mmeanabs]: https://github.com/stdlib-js/stats-iter-mmeanabs
+[@stdlib/stats/iter/mmeanabs]: https://github.com/stdlib-js/stats-iter-mmeanabs/tree/esm
 
-[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs
+[@stdlib/stats/iter/sumabs]: https://github.com/stdlib-js/stats-iter-sumabs/tree/esm
 
 <!-- </related-links> -->
 
